@@ -61,6 +61,8 @@ class Players extends Component {
     componentDidMount() {
         this.fetchData();   
     }
+
+
     fetchData = () => {
         axios.get(`http://localhost:5000/api/players`)
         .then(result => { 
@@ -72,6 +74,10 @@ class Players extends Component {
             console.log('error:', error)
         })
     }
+
+
+
+
  
     render () {
         return  (
